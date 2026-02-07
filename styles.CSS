@@ -1,0 +1,183 @@
+
+Almodiel JayaMekaela <almodieljayamekaela@isufst.edu.ph>
+2:24 PM (0 minutes ago)
+to Aguilar
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Website | Home</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fff1f5, #fde2e4);
+            color: #444;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 32px 0;
+            text-align: center;
+            border-bottom: 1px solid #f5c2cc;
+        }
+
+        header h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            color: #e26d8c;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* ===== NAVIGATION ===== */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 22px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #a65a73;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 999px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #f4a6b8;
+            color: white;
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(226, 109, 140, 0.15);
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #e26d8c;
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            width: 50px;
+            height: 3px;
+            background: #f4a6b8;
+            display: block;
+            margin-top: 6px;
+            border-radius: 5px;
+        }
+
+        p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        /* ===== FEATURED SECTION ===== */
+        .featured {
+            background: linear-gradient(135deg, #f4a6b8, #f7c1cc);
+            color: white;
+            padding: 32px;
+            border-radius: 22px;
+            box-shadow: 0 15px 30px rgba(244, 166, 184, 0.4);
+        }
+
+        .featured h2 {
+            color: white;
+        }
+
+        .featured h2::after {
+            background: #ffffff;
+        }
+
+        .featured p {
+            color: #fff7f9;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 26px;
+            color: #a65a73;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Mini Website</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Welcome</h2>
+        <p>
+            Welcome to my mini website created for our laboratory activity.
+            This project highlights basic HTML structure with a soft pastel
+            pink aesthetic design.
+        </p>
+    </section>
+
+    <section class="featured">
+        <h2>Featured Section</h2>
+        <p>
+            We create clean, beginner-friendly, and visually pleasing
+            websites that help students learn web development with ease.
+        </p>
+    </section>
+</div>
+
+<footer>
+    <p>© 2026 My Mini Website</p>
+</footer>
+
+</body>
+</html>
